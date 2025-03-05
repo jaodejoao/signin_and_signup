@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/signin.css">
+    <script src="scripts/signin.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Efetuar login</h2>
+
+            <p style="opacity: 40%; text-align: center;">O botão registrar-se funciona!</p>
+            
+            <!-- Campo de entrada para o e-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+            </div>
+    
+            <!-- Campo de entrada para a senha -->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+                <a href="#" style="float: right; font-size: 14px; color: #1e90ff;">Esqueceu sua senha?</a>
+                <a href="signup.html" style="float: right; font-size: 14px; color: #1e90ff; margin-right: 10px;">Registrar-se</a>
+            </div>
+    
+            <!-- Caixa para lembrar-me -->
+            <div class="form-group" style="display: flex; align-items: center;">
+                <input type="checkbox" name="lembrar" id="lembrar" style="width: 20px; height: 20px; margin-right: 8px; accent-color: #1e90ff;">
+                <label for="lembrar" style="margin: 0; font-size: 14px; color: #555;">Lembrar-me</label>
+            </div>
+    
+            <!-- Botão de login -->
+            <button type="submit">Entrar</button>
+
+            <!-- Container "or" -->
+            <div class="or-container">
+                <hr style="flex: 1; margin: 0 10px; border: 1px solid #ccc;">
+                <span style="font-size: 15px; font-weight: 500; color: #555;">ou</span>
+                <hr style="flex: 1; margin: 0 10px; border: 1px solid #ccc;">
+            </div>
+
+            <!-- Botões sociais -->
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/jaodejoao/" class="linkedin">LinkedIn</a>
+                <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com/&ec=GAZAmgQ" class="google">Google</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
